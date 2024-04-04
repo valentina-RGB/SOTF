@@ -31,6 +31,7 @@ class server {
     }
 
     routers() {
+        //HOME
         this.app.get('/', require('./routers/home-routers'));
         this.app.get('/log', require('./routers/home-routers'));
         this.app.get('/home', require('./routers/home-routers'));
@@ -44,14 +45,20 @@ class server {
     
         // SUPPLIES
         this.app.get('/supplies',require ('./routers/supplies-routers'));
+        this.app.get('/tablas',require ('./routers/home-routers'));
 
 
+        //CONFIGURATION
         this.app.get('/user',require ('./routers/user-routers'));
         this.app.get('/rol',require ('./routers/rol-routers'));
-        this.app.get('/tablas',require ('./routers/home-routers'));
+
         
+        //ORDER
         this.app.get('/order', require('./routers/order-routers'));
         this.app.get('/newOrder', require('./routers/order-routers'));
+
+        //ANALYTIC
+        this.app.get('/analytic', require('./routers/dashboard_routers'));
 
         
     }
