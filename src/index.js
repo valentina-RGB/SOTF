@@ -63,6 +63,7 @@ class server {
 
         //PRODUCT
         this.app.get('/product', require('./routers/product_routers'));
+        this.app.get('/product_new', require('./routers/product_routers'));
         
     }
 
