@@ -250,17 +250,17 @@
                       <form class=" was-validated">
                         {{!-- INFORMACION DEL PEDIDO --}}
                         <div class="d-flex justify-content-lg-between mb-4">
-                          <h5 class="font-weight-bolder">Pedido #002</h5>
-                          <button type="submit" class="btn  btn-primary btn-sm mb-0" novalidate> <a href="order">+&nbsp;
-                              Terminar</a></button>
+                          <h5 class="font-weight-bolder">Entradas #002</h5>
+                          {{!-- <button type="submit" class="btn  btn-primary btn-sm mb-0" novalidate> <a href="order">+&nbsp;
+                              Terminar</a></button> --}}
                         </div>
                         <div class="row">
                           <div class="col-12 col-sm-6">
 
                             <div class="form-group">
-                              <label class="form-control-label" for="input-username">Código</label>
-                              <input type="text" class="form-control" pattern="[a-zA-Z]{2}\d{2}"
-                                placeholder="Código del producto">
+                              <label class="form-control-label" for="input-username">Nombre de entrada</label>
+                              <input type="text" class="form-control" pattern="[a-zA-Z]"
+                                placeholder="Nombre de entrada">
                               <div class="valid-feedback ">
                                 El código es válido.
                               </div>
@@ -271,15 +271,15 @@
                           </div>
                           <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                             <div class="form-group" required pattern="[a-zA-Z]">
-                              <label for=" exampleDataList" class="form-control-label">Busca el producto</label>
+                              <label for=" exampleDataList" class="form-control-label">Busca insumo</label>
                               <input class="form-control " list="datalistOptions" id="exampleDataList"
-                                placeholder="Productos..." required>
+                                placeholder=" Insumo" required>
                               <datalist id="datalistOptions">
-                                <option value="Salpicón pequeño">
-                                <option value="Salpicón mediano">
-                                <option value="Salpicón Grande">
-                                <option value="Salpicón Especial">
-                                <option value="Salpicón con queso">
+                                <option value="Barquillos">
+                                <option value="Fresa">
+                                <option value="Manzana">
+                                <option value="Cereza">
+                                <option value="H - Chocolate">
                               </datalist>
                               <div class="valid-feedback">
                                 ¡Bien! Quendan: (2)
@@ -289,46 +289,37 @@
                               </div>
                             </div>
                           </div>
+                          <div class="col-12 col-sm-6">
+
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-username">Cantidad recomendada por el proveedor</label>
+                              <input type="number" class="form-control" min="1"
+                                placeholder="Cantidad">
+                              <div class="valid-feedback ">
+                                El código es válido.
+                              </div>
+                              <div class="invalid-feedback">
+                                Dato no válido.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-username">Cantidad recomendada por la empresa</label>
+                              <input type="number" class="form-control" min="1"
+                                placeholder="Cantidad">
+                              <div class="valid-feedback ">
+                                El código es válido.
+                              </div>
+                              <div class="invalid-feedback">
+                                Dato no válido.
+                              </div>
+                            </div>
+                          </div>
                         </div>
+              
                         <div class="row text-center mx-auto">
-                          <div class="col-lg-3">
-                            <div class="form-group" pattern="[a-zA-Z]">
-                              <label for=" exampleDataList" class="form-control-label">Helado</label>
-                              <input class="form-control " list="helado" id="exampleDataList" placeholder="Helado">
-                              <datalist id="helado">
-                                <option value="Vainilla">
-                                <option value="Chocolate">
-                                <option value="Fresa">
-                                <option value="Sandia">
-                                <option value="Vetado de caramelo">
-                              </datalist>
-                              <div class="valid-feedback">
-
-                              </div>
-                              <div class="invalid-feedback">
-                                El dado no es válido.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-3">
-                            <div class="form-group" pattern="[a-zA-Z]">
-                              <label for=" exampleDataList" class="form-control-label">Adiciones</label>
-                              <input class="form-control " list="adicion" id="exampleDataList" placeholder="Adición">
-                              <datalist id="adicion">
-                                <option value="Barquillo">
-                                <option value="Fresa">
-                                <option value="Cereza">
-                                <option value="vaso">
-                                <option value="Queso">
-                              </datalist>
-                              <div class="valid-feedback">
-
-                              </div>
-                              <div class="invalid-feedback">
-                                El dado no es válido.
-                              </div>
-                            </div>
-                          </div>
                           <div class="col-lg-2">
                             <div class="form-group">
                               <label class="form-control-label" for="input-username">Cantidad</label>
@@ -341,6 +332,22 @@
                               </div>
                             </div>
                           </div>
+                          <div class="col-lg-3">
+                            <div class="form-group" pattern="[a-zA-Z]">
+                              <label for=" exampleDataList" class="form-control-label">Medida</label>
+                              <input class="form-control " list="Medida" id="exampleDataList" placeholder="Helado">
+                              <datalist id="Medida">
+                                <option value="Litros">
+                                <option value="Gramos">
+                              </datalist>
+                              <div class="valid-feedback">
+
+                              </div>
+                              <div class="invalid-feedback">
+                                El dado no es válido.
+                              </div>
+                            </div>
+                          </div>                        
 
                           <div class="form-group col-lg-4 mx-auto my-auto ">
                             <button class="btn btn-info w-100 mt-4" type="button">
