@@ -71,15 +71,16 @@
                             <form class=" was-validated" id="formulario">
                                 <div class="d-flex justify-content-lg-between mb-4">
                                     <h5 class="font-weight-bolder">Agregar producto</h5>
-                                        <button type="button" class="btn  btn-primary btn-sm mb-0" novalidate onclick="enviar()" > +&nbsp; Terminar</button>
+                                    <button type="button" class="btn  btn-primary btn-sm mb-0" novalidate
+                                        onclick="enviar()"> +&nbsp; Terminar</button>
                                     <script>
-                                        const enviar=(()=>{
-                                             setTimeout(() => {
-                                            window.location.href = 'product';
-                                          
-                                        }, 1500);
+                                        const enviar = (() => {
+                                            setTimeout(() => {
+                                                window.location.href = 'product';
+
+                                            }, 1500);
                                         })
-                                       
+
                                     </script>
                                 </div>
                                 <div class="row ">
@@ -156,8 +157,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-lg-4 mx-auto my-auto ">
-                                            <button class="btn btn-info w-100 mt-4" type="button">
+                                        <div class="form-group col-lg-3 mx-auto my-auto ">
+                                            <button class="btn btn-info w-100 mt-4 btn-sm" type="button">
                                                 <span class="btn-inner--icon">Añadir<i
                                                         class="bi bi-plus-lg mx-2"></i></span>
                                             </button>
@@ -170,6 +171,23 @@
                                     <div class="row text-center mx-auto">
                                         <h6>Datos detallados</h6>
                                         <div class="col-lg-6">
+                                            <div class="form-group" pattern="[a-zA-Z]">
+                                                <label for=" exampleDataList" class="form-control-label">Categoria</label>
+                                                <input class="form-control " list="categoria" id="exampleDataList"
+                                                    placeholder="categoría">
+                                                <datalist id="categoria">
+                                                    <option value="Salpicón">
+                                                    <option value="Copa">
+                                                </datalist>
+                                                <div class="valid-feedback">
+
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    El dado no es válido.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
                                             <div class="form-group" pattern="[a-zA-Z]">
                                                 <label for=" exampleDataList" class="form-control-label">Bolas de helado
                                                     min</label>
@@ -184,7 +202,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-lg-6">
+                                        <div class="col-lg-3">
                                             <div class="form-group" pattern="[a-zA-Z]">
                                                 <label class="form-control-label">Bolas de helado Máx.</label>
                                                 <input class="form-control " type="number" placeholder="minimo" required
