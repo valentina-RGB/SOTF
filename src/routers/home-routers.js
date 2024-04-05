@@ -12,5 +12,4 @@ router.get('/shops',shopsGET);
 router.get('/icons',iconosGET);
 router.get('/tables',tableGET);
 router.get('/tablas',tableGET);
-
 module.exports = router;
