@@ -62,9 +62,12 @@
                 </div>
                 <div class="ms-auto my-auto mt-lg-0 mt-4 mb--3">
                   <div class="ms-auto my-auto">
-                    <a href="new-product.html" class="btn bg-gradient-primary btn-sm mb-0" target="_blank">+&nbsp; Agregar insumo</a>
-                    <a href="new-product.html" class="btn bg-gradient-success btn-sm mb-0" target="_blank">+&nbsp; Agregar entrada</a>
-                   <a href="new-product.html" class="btn bg-gradient-warning btn-sm mb-0" target="_blank">+&nbsp; Historial entradas</a>
+                    <a href="new-product.html" class="btn bg-gradient-primary btn-sm mb-0" target="_blank">+&nbsp;
+                      Agregar insumo</a>
+                    <a href="new-product.html" class="btn bg-gradient-success btn-sm mb-0" target="_blank">+&nbsp;
+                      Agregar entrada</a>
+                    <a href="#modal-form" class="btn bg-gradient-warning btn-sm mb-0" target="_blank">+&nbsp; Historial
+                      entradas</a>
                   </div>
                 </div>
               </div>
@@ -97,21 +100,22 @@
                       <td class="text-sm">8 UND</td>
                       <td>
                         <div class="col-8">
-                      <select class="form-select form-select-sm" aria-label="Default select example">
-                        <option selected value="1">Activo</option>
-                        <option value="2">Inactivo</option>
-                      </select>
-                    </div>
+                          <select class="form-select form-select-sm" aria-label="Default select example">
+                            <option selected value="1">Activo</option>
+                            <option value="2">Inactivo</option>
+                          </select>
+                        </div>
                       </td>
                       <td class="text-sm">
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
                           <i class="fas fa-eye text-secondary"></i>
                         </a>
-                        <a href="javascript:;" class="mx-3" data-bs-toggle="tooltip"
-                          data-bs-original-title="Edit product">
+                        <a href="javascript:;" class="mx-3" data-bs-original-title="Edit product" data-bs-toggle="modal"
+                          data-bs-target="#modal-form">
                           <i class="fas fa-user-edit text-secondary"></i>
                         </a>
-                        <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product" onclick="argon.showSwal('warning-message-and-confirmation')">
+                        <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product"
+                          onclick="argon.showSwal('warning-message-and-confirmation')">
                           <i class="fas fa-trash text-secondary"></i>
                         </a>
                       </td>
@@ -134,8 +138,134 @@
         </div>
       </div>
     </div>
+
   </main>
 
+
+  {{!-- MODAL EDITAR INSUMO --}}
+  <div class="col-md-4">
+    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-2">
+            <div class="card-body mx-5 mx--5">
+              <h5 class="font-weight-bolder">Product Information</h5>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <label>Name</label>
+                  <input class="form-control" type="text" value="Minimal Bar Stool" onfocus="focused(this)"
+                    onfocusout="defocused(this)">
+                </div>
+                <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                  <label>Weight</label>
+                  <input class="form-control" type="number" value="2" onfocus="focused(this)"
+                    onfocusout="defocused(this)">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <label class="mt-4">Collection</label>
+                  <input class="form-control" type="text" value="Summer" onfocus="focused(this)"
+                    onfocusout="defocused(this)">
+                </div>
+                <div class="col-3">
+                  <label class="mt-4">Price</label>
+                  <input class="form-control" type="text" value="$90" onfocus="focused(this)"
+                    onfocusout="defocused(this)">
+                </div>
+                <div class="col-3">
+                  <label class="mt-4">Quantity</label>
+                  <input class="form-control" type="number" value="50" onfocus="focused(this)"
+                    onfocusout="defocused(this)">
+                </div>
+              </div>
+              <div class="row">
+               
+                <div class="col-sm-6">
+                  <label class="mt-4">Category</label>
+                  <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
+                    aria-expanded="false">
+                    <div class="choices__inner"><select class="form-control choices__input" name="choices-category"
+                        id="choices-category-edit" hidden="" tabindex="-1" data-choice="active">
+                        <option value="Choice 1">Furniture</option>
+                      </select>
+                      <div class="choices__list choices__list--single">
+                        <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                          data-value="Choice 1" data-custom-properties="null" aria-selected="true">Furniture</div>
+                      </div>
+                    </div>
+                    <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                      <div class="choices__list" role="listbox">
+                        <div id="choices--choices-category-edit-item-choice-1"
+                          class="choices__item choices__item--choice choices__item--selectable is-highlighted"
+                          role="option" data-choice="" data-id="1" data-value="Choice 4"
+                          data-select-text="Press to select" data-choice-selectable="" aria-selected="true">Clothing
+                        </div>
+                        <div id="choices--choices-category-edit-item-choice-2"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="2" data-value="Choice 3" data-select-text="Press to select"
+                          data-choice-selectable="">Electronics</div>
+                        <div id="choices--choices-category-edit-item-choice-3"
+                          class="choices__item choices__item--choice is-selected choices__item--selectable"
+                          role="option" data-choice="" data-id="3" data-value="Choice 1"
+                          data-select-text="Press to select" data-choice-selectable="">Furniture</div>
+                        <div id="choices--choices-category-edit-item-choice-4"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="4" data-value="Choice 5" data-select-text="Press to select"
+                          data-choice-selectable="">Others</div>
+                        <div id="choices--choices-category-edit-item-choice-5"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="5" data-value="Choice 2" data-select-text="Press to select"
+                          data-choice-selectable="">Real Estate</div>
+                      </div>
+                    </div>
+                  </div>
+                  <label>Color</label>
+                  <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
+                    aria-expanded="false">
+                    <div class="choices__inner"><select class="form-control choices__input" name="choices-color"
+                        id="choices-color-edit" hidden="" tabindex="-1" data-choice="active">
+                        <option value="Choice 1">Black</option>
+                      </select>
+                      <div class="choices__list choices__list--single">
+                        <div class="choices__item choices__item--selectable" data-item="" data-id="1"
+                          data-value="Choice 1" data-custom-properties="null" aria-selected="true">Black</div>
+                      </div>
+                    </div>
+                    <div class="choices__list choices__list--dropdown" aria-expanded="false">
+                      <div class="choices__list" role="listbox">
+                        <div id="choices--choices-color-edit-item-choice-1"
+                          class="choices__item choices__item--choice is-selected choices__item--selectable is-highlighted"
+                          role="option" data-choice="" data-id="1" data-value="Choice 1"
+                          data-select-text="Press to select" data-choice-selectable="" aria-selected="true">Black</div>
+                        <div id="choices--choices-color-edit-item-choice-2"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="2" data-value="Choice 3" data-select-text="Press to select"
+                          data-choice-selectable="">Blue</div>
+                        <div id="choices--choices-color-edit-item-choice-3"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="3" data-value="Choice 5" data-select-text="Press to select"
+                          data-choice-selectable="">Green</div>
+                        <div id="choices--choices-color-edit-item-choice-4"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="4" data-value="Choice 4" data-select-text="Press to select"
+                          data-choice-selectable="">Orange</div>
+                        <div id="choices--choices-color-edit-item-choice-5"
+                          class="choices__item choices__item--choice choices__item--selectable" role="option"
+                          data-choice="" data-id="5" data-value="Choice 2" data-select-text="Press to select"
+                          data-choice-selectable="">White</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
   {{>fixed_plugin}}
   <script src="./assets/js/plugins/sweetalert.min.js"></script>
