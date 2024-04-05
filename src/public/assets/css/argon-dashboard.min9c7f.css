@@ -29146,12 +29146,13 @@ Github: https://github.com/fiduswriter/Simple-DataTables
 }
 
 .dataTable-wrapper .dataTable-top .dataTable-search input {
-    font-size: .875rem;
+    font-size: .800rem;
     color: #495057;
     border: 1px solid #e9ecef;
     border-radius: .5rem;
     width:500px;
-    display: grid;
+    margin-right: 250px;
+   
 }
 
 .dataTable-wrapper .dataTable-top .dataTable-search input:focus-visible {

@@ -60,6 +60,9 @@ class server {
         //ANALYTIC
         this.app.get('/analytic', require('./routers/dashboard_routers'));
 
+
+        //PRODUCT
+        this.app.get('/product', require('./routers/product_routers'));
         
     }
 

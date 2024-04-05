@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    {{>link_css}}
+</head>
+
+<body class="g-sidenav-show   bg-gray-100">
+
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+
+    <div class="min-height-300 bg-primary position-absolute w-100"></div>
+    <aside
+        class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+        id="sidenav-main">
+        {{>nav_home}}
+    </aside>
+    <main class="main-content position-relative border-radius-lg ">
+        <nav class="navbar navbar-main navbar-expand-lg  px-0 mx-2 shadow-none border-radius-xl z-index-sticky "
+            id="navbarBlur" data-scroll="false">
+            <div class="container-fluid py-1 px-3">
+
+                <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+                    <a href="javascript:;" class="nav-link p-0">
+                        <div class="sidenav-toggler-inner">
+                            <i class="sidenav-toggler-line bg-white"></i>
+                            <i class="sidenav-toggler-line bg-white"></i>
+                            <i class="sidenav-toggler-line bg-white"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid py-0">
+            <div class="row">
+
+                <div class="col-12 ">
+                    <div class="card ">
+
+                        <div class="card-body px-0 pb-0">
+                            <div class="col-12 mb-0 ">
+                                {{>nav_products}}
+                            </div>
+                            <div class="table-responsive ">
+                                <style>
+                                    #datatable-search:-ms-input-placeholder{
+                                        background: black;
+                                    }
+                                </style>
+                                <table class="table table-flush" id="datatable-search" >
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Nombre</th>
+                                            <th>Estado</th>
+                                            <th>Precio und</th>
+                                            <th>Controles</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody >
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="customCheck1">
+                                                    </div>
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#001</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold ">
+                                                <span class="my-2 text-xs">Vaso sencillo</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Activo</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <span>$ 3.000</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold ">
+                                                <div class="row">
+                                                    <div
+                                                        class="col-4 d-flex  justify-content-center align-items-center">
+                                                        <a href="javascript:;" data-bs-toggle="modal"
+                                                            data-bs-target="#detalle"
+                                                            data-bs-original-title="Ver detalle">
+                                                            <i class="fas fa-eye text-secondary"></i>
+                                                        </a>
+                                                        <a href="newOrder" class="mx-3" data-bs-toggle="tooltip"
+                                                            data-bs-original-title="Editar">
+                                                            <i class="fas fa-user-edit text-secondary"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="me-2" data-bs-toggle="tooltip"
+                                                            data-bs-original-title="Convertir en una venta">
+                                                            <i class="bi bi-trash3"
+                                                                style="font-size: 1rem; color: red;"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <select class="form-select form-select-sm"
+                                                            aria-label="Default select example">
+                                                            <option selected>Estado</option>
+                                                            <option value="1">Activo</option>
+                                                            <option value="2">Inactivo</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="customCheck1">
+                                                    </div>
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#002</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">Vaso doble</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="fas fa-check" aria-hidden="true"></i></button>
+                                                    <span>Disponible</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <span>$ 5.000</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold ">
+                                                <div class="row d-flex">
+                                                    <div
+                                                        class="col-4 d-flex  justify-content-center align-items-center">
+                                                        <a href="javascript:;" data-bs-toggle="modal"
+                                                            data-bs-target="#detalle"
+                                                            data-bs-original-title="Ver detalle">
+                                                            <i class="fas fa-eye text-secondary"></i>
+                                                        </a>
+                                                        <a href="newOrder" class="mx-3" data-bs-toggle="tooltip"
+                                                            data-bs-original-title="Editar">
+                                                            <i class="fas fa-user-edit text-secondary"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="me-2" data-bs-toggle="tooltip"
+                                                            data-bs-original-title="Convertir en una venta">
+                                                            <i class="bi bi-trash3"
+                                                                style="font-size: 1rem; color: red;"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <select class="form-select form-select-sm"
+                                                            aria-label="Default select example">
+                                                            <option selected>Estado</option>
+                                                            <option value="1">Activo</option>
+                                                            <option value="2">Inactivo</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="customCheck1">
+                                                    </div>
+                                                    <p class="text-xs font-weight-bold ms-2 mb-0">#003</p>
+                                                </div>
+                                            </td>
+                                            <td class="font-weight-bold">
+                                                <span class="my-2 text-xs">Vaso con queso sencillo</span>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-icon-only btn-rounded btn-outline-secondary mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                            class="bi bi-dash-lg " aria-hidden="true"
+                                                            style="color: gray;"></i></button>
+                                                    <span>Agotado</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold">
+                                                <div class="d-flex align-items-center">
+                                                    <span>$ 7.000</span>
+                                                </div>
+                                            </td>
+                                            <td class="text-xs font-weight-bold ">
+                                                <div class="row d-flex">
+                                                    <div
+                                                        class="col-4 d-flex  justify-content-center align-items-center">
+                                                        <a href="javascript:;" data-bs-toggle="modal"
+                                                            data-bs-target="#detalle"
+                                                            data-bs-original-title="Ver detalle">
+                                                            <i class="fas fa-eye text-secondary"></i>
+                                                        </a>
+                                                        <a href="newOrder" class="mx-3" data-bs-toggle="tooltip"
+                                                            data-bs-original-title="Editar">
+                                                            <i class="fas fa-user-edit text-secondary"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="me-2" data-bs-toggle="tooltip"
+                                                            data-bs-original-title="Convertir en una venta">
+                                                            <i class="bi bi-trash3"
+                                                                style="font-size: 1rem; color:red;"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <select class="form-select form-select-sm"
+                                                            aria-label="Default select example">
+                                                            <option selected>Estado</option>
+                                                            <option value="1">Activo</option>
+                                                            <option value="2">Inactivo</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                            </div>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                        </div>
+                                        <p class="text-xs font-weight-bold ms-2 mb-0">#004</p>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">
+                                    <span class="my-2 text-xs">Copa queso pequeña</span>
+                                </td>
+                                <td class="text-xs font-weight-bold">
+                                    <div class="d-flex align-items-center">
+                                        <button
+                                            class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                class="fas fa-check" aria-hidden="true"></i></button>
+                                        <span>Disponible</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs font-weight-bold">
+                                    <div class="d-flex align-items-center">
+                                        <span>$ 12.000</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs font-weight-bold ">
+                                    <div class="row d-flex">
+                                        <div class="col-4 d-flex  justify-content-center align-items-center">
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#detalle"
+                                                data-bs-original-title="Ver detalle">
+                                                <i class="fas fa-eye text-secondary"></i>
+                                            </a>
+                                            <a href="newOrder" class="mx-3" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Editar">
+                                                <i class="fas fa-user-edit text-secondary"></i>
+                                            </a>
+                                            <a href="javascript:;" class="me-2" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Convertir en una venta">
+                                                <i class="bi bi-trash3"
+                                                    style="font-size: 1rem; color: red"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-8">
+                                            <select class="form-select form-select-sm"
+                                                aria-label="Default select example">
+                                                <option selected>Estado</option>
+                                                <option value="1">Activo</option>
+                                                <option value="2">Inactivo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                        </div>
+                                        <p class="text-xs font-weight-bold ms-2 mb-0">#005</p>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">
+                                    <span class="my-2 text-xs">Copa merengue</span>
+                                </td>
+                                <td class="text-xs font-weight-bold">
+                                    <div class="d-flex align-items-center">
+                                        <button
+                                            class="btn btn-icon-only btn-rounded btn-outline-secondary mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                class="bi bi-dash-lg " aria-hidden="true"
+                                                style="color: gray;"></i></button>
+                                        <span>Agotado</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs font-weight-bold">
+                                    <div class="d-flex align-items-center">
+                                        <span>$ 14.000</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs font-weight-bold ">
+                                    <div class="row d-flex">
+                                        <div class="col-4 d-flex  justify-content-center align-items-center">
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#detalle"
+                                                data-bs-original-title="Ver detalle">
+                                                <i class="fas fa-eye text-secondary"></i>
+                                            </a>
+                                            <a href="newOrder" class="mx-3" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Editar">
+                                                <i class="fas fa-user-edit text-secondary"></i>
+                                            </a>
+                                            <a href="javascript:;" class="me-2" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Convertir en una venta">
+                                                <i class="bi bi-trash3"
+                                                    style="font-size: 1rem; color:red"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-8">
+                                            <select class="form-select form-select-sm"
+                                                aria-label="Default select example">
+                                                <option selected>Estado</option>
+                                                <option value="1">Activo</option>
+                                                <option value="2">Inactivo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="customCheck1">
+                                        </div>
+                                        <p class="text-xs font-weight-bold ms-2 mb-0">#006</p>
+                                    </div>
+                                </td>
+                                <td class="font-weight-bold">
+                                    <span class="my-2 text-xs">Copa brownie</span>
+                                </td>
+                                <td class="text-xs font-weight-bold">
+                                    <div class="d-flex align-items-center">
+                                        <button
+                                            class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                                                class="fas fa-check" aria-hidden="true"></i></button>
+                                        <span>Disponible</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs font-weight-bold">
+                                    <div class="d-flex align-items-center">
+                                        <span>$ 13.000</span>
+                                    </div>
+                                </td>
+                                <td class="text-xs font-weight-bold ">
+                                    <div class="row d-flex">
+                                        <div class="col-4 d-flex  justify-content-center align-items-center">
+                                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#detalle"
+                                                data-bs-original-title="Ver detalle">
+                                                <i class="fas fa-eye text-secondary"></i>
+                                            </a>
+                                            <a href="newOrder" class="mx-3" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Editar">
+                                                <i class="fas fa-user-edit text-secondary"></i>
+                                            </a>
+                                            <a href="javascript:;" class="me-2" data-bs-toggle="tooltip"
+                                                data-bs-original-title="Convertir en una venta">
+                                                <i class="bi bi-trash3"
+                                                    style="font-size: 1rem; color:red"></i>
+                                            </a>
+                                        </div>
+                                        <div class="col-8">
+                                            <select class="form-select form-select-sm"
+                                                aria-label="Default select example">
+                                                <option selected>Estado</option>
+                                                <option value="1">Activo</option>
+                                                <option value="2">Inactivo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+
+    {{!-- MODAL VER DETALLE --}}
+    <div class="modal fade" id="detalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content  modal-dialog-centered">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12">
+                        {{>order_details}}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{!-- MODAL EDITAR --}}
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{>fixed_plugin}}
+
+    {{>link_js}}
+    {{!-- links propios --}}
+    <script src="./assets/js/plugins/datatables.js"></script>
+
+    <script>
+        const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
+            searchable: true,
+            fixedHeight: false,
+            perPageSelect: false
+        });
+
+        document.querySelectorAll(".export").forEach(function (el) {
+            el.addEventListener("click", function (e) {
+                var type = el.dataset.type;
+
+                var data = {
+                    type: type,
+                    filename: "soft-ui-" + type,
+                };
+
+                if (type === "csv") {
+                    data.columnDelimiter = "|";
+                }
+
+                dataTableSearch.export(data);
+            });
+        });
+    </script>
+</body>
+
+<!-- Mirrored from demos.creative-tim.com/argon-dashboard-pro/pages/ecommerce/products/products-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Apr 2024 23:41:33 GMT -->
+
+</html>
