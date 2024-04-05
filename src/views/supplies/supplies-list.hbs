@@ -64,7 +64,8 @@
                   <div class="ms-auto my-auto">
                     <a href="new-product.html" class="btn bg-gradient-primary btn-sm mb-0" target="_blank">+&nbsp;
                       Agregar insumo</a>
-                    <a href="new-product.html" class="btn bg-gradient-success btn-sm mb-0" target="_blank">+&nbsp;
+                    <a class="btn bg-gradient-success btn-sm mb-0" target="_blank" data-bs-original-title="Edit product" data-bs-toggle="modal"
+                          data-bs-target="#agregar_insumo">+&nbsp;
                       Agregar entrada</a>
                     <a href="#modal-form" class="btn bg-gradient-warning btn-sm mb-0" target="_blank">+&nbsp; Historial
                       entradas</a>
@@ -169,17 +170,12 @@
             </div>
             <div class="row">
               <div class="col-3">
-                <label class="mt-4">Collection</label>
-                <input class="form-control" type="text" value="Summer" onfocus="focused(this)"
+                <label class="mt-4">Cant. Min</label>
+                <input class="form-control" type="number" value="10" onfocus="focused(this)"
                   onfocusout="defocused(this)">
               </div>
               <div class="col-3">
-                <label class="mt-4">Price</label>
-                <input class="form-control" type="text" value="$90" onfocus="focused(this)"
-                  onfocusout="defocused(this)">
-              </div>
-              <div class="col-3">
-                <label class="mt-4">Quantity</label>
+                <label class="mt-4">Cant. Max</label>
                 <input class="form-control" type="number" value="50" onfocus="focused(this)"
                   onfocusout="defocused(this)">
               </div>
@@ -187,16 +183,16 @@
             <div class="row">
               
               <div class="col-sm-6">
-                <label class="mt-4">Category</label>
+                <label class="mt-4">Tipo Medida</label>
                 <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
                   aria-expanded="false">
                   <div class="choices__inner"><select class="form-control choices__input" name="choices-category"
                       id="choices-category-edit" hidden="" tabindex="-1" data-choice="active">
-                      <option value="Choice 3">Electronics</option>
+                      <option value="Choice 3" selected>Litros</option>
                     </select>
                     <div class="choices__list choices__list--single">
                       <div class="choices__item choices__item--selectable" data-item="" data-id="2"
-                        data-value="Choice 3" data-custom-properties="null" aria-selected="true">Electronics</div>
+                        data-value="Choice 3" data-custom-properties="null" aria-selected="true">Litros</div>
                     </div>
                   </div>
                   <div class="choices__list choices__list--dropdown" aria-expanded="false">
@@ -224,44 +220,7 @@
                         data-choice-selectable="">Real Estate</div>
                     </div>
                   </div>
-                </div>
-                <label>Color</label>
-                <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
-                  aria-expanded="false">
-                  <div class="choices__inner"><select class="form-control choices__input" name="choices-color"
-                      id="choices-color-edit" hidden="" tabindex="-1" data-choice="active">
-                      <option value="Choice 1">Black</option>
-                    </select>
-                    <div class="choices__list choices__list--single">
-                      <div class="choices__item choices__item--selectable" data-item="" data-id="1"
-                        data-value="Choice 1" data-custom-properties="null" aria-selected="true">Black</div>
-                    </div>
-                  </div>
-                  <div class="choices__list choices__list--dropdown" aria-expanded="false">
-                    <div class="choices__list" role="listbox">
-                      <div id="choices--choices-color-edit-item-choice-1"
-                        class="choices__item choices__item--choice is-selected choices__item--selectable is-highlighted"
-                        role="option" data-choice="" data-id="1" data-value="Choice 1"
-                        data-select-text="Press to select" data-choice-selectable="" aria-selected="true">Black</div>
-                      <div id="choices--choices-color-edit-item-choice-2"
-                        class="choices__item choices__item--choice choices__item--selectable" role="option"
-                        data-choice="" data-id="2" data-value="Choice 3" data-select-text="Press to select"
-                        data-choice-selectable="">Blue</div>
-                      <div id="choices--choices-color-edit-item-choice-3"
-                        class="choices__item choices__item--choice choices__item--selectable" role="option"
-                        data-choice="" data-id="3" data-value="Choice 5" data-select-text="Press to select"
-                        data-choice-selectable="">Green</div>
-                      <div id="choices--choices-color-edit-item-choice-4"
-                        class="choices__item choices__item--choice choices__item--selectable" role="option"
-                        data-choice="" data-id="4" data-value="Choice 4" data-select-text="Press to select"
-                        data-choice-selectable="">Orange</div>
-                      <div id="choices--choices-color-edit-item-choice-5"
-                        class="choices__item choices__item--choice choices__item--selectable" role="option"
-                        data-choice="" data-id="5" data-value="Choice 2" data-select-text="Press to select"
-                        data-choice-selectable="">White</div>
-                    </div>
-                  </div>
-                </div>
+                </div>                              
               </div>
             </div>
           </div>
@@ -275,6 +234,129 @@
   </div>
   </div>
 
+
+  {{!-- MODAL AGREGAR ENTRADA --}}
+    <div class="modal fade" id="agregar_insumo" tabindex="-1" role="dialog" aria-labelledby="exampleModalMessageTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+               <div class="card-body">
+                      <form class=" was-validated">
+                        {{!-- INFORMACION DEL PEDIDO --}}
+                        <div class="d-flex justify-content-lg-between mb-4">
+                          <h5 class="font-weight-bolder">Pedido #002</h5>
+                          <button type="submit" class="btn  btn-primary btn-sm mb-0" novalidate> <a href="order">+&nbsp;
+                              Terminar</a></button>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6">
+
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-username">Código</label>
+                              <input type="text" class="form-control" pattern="[a-zA-Z]{2}\d{2}"
+                                placeholder="Código del producto">
+                              <div class="valid-feedback ">
+                                El código es válido.
+                              </div>
+                              <div class="invalid-feedback">
+                                Dato no válido.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                            <div class="form-group" required pattern="[a-zA-Z]">
+                              <label for=" exampleDataList" class="form-control-label">Busca el producto</label>
+                              <input class="form-control " list="datalistOptions" id="exampleDataList"
+                                placeholder="Productos..." required>
+                              <datalist id="datalistOptions">
+                                <option value="Salpicón pequeño">
+                                <option value="Salpicón mediano">
+                                <option value="Salpicón Grande">
+                                <option value="Salpicón Especial">
+                                <option value="Salpicón con queso">
+                              </datalist>
+                              <div class="valid-feedback">
+                                ¡Bien! Quendan: (2)
+                              </div>
+                              <div class="invalid-feedback">
+                                Ingresa un producto.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row text-center mx-auto">
+                          <div class="col-lg-3">
+                            <div class="form-group" pattern="[a-zA-Z]">
+                              <label for=" exampleDataList" class="form-control-label">Helado</label>
+                              <input class="form-control " list="helado" id="exampleDataList" placeholder="Helado">
+                              <datalist id="helado">
+                                <option value="Vainilla">
+                                <option value="Chocolate">
+                                <option value="Fresa">
+                                <option value="Sandia">
+                                <option value="Vetado de caramelo">
+                              </datalist>
+                              <div class="valid-feedback">
+
+                              </div>
+                              <div class="invalid-feedback">
+                                El dado no es válido.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-group" pattern="[a-zA-Z]">
+                              <label for=" exampleDataList" class="form-control-label">Adiciones</label>
+                              <input class="form-control " list="adicion" id="exampleDataList" placeholder="Adición">
+                              <datalist id="adicion">
+                                <option value="Barquillo">
+                                <option value="Fresa">
+                                <option value="Cereza">
+                                <option value="vaso">
+                                <option value="Queso">
+                              </datalist>
+                              <div class="valid-feedback">
+
+                              </div>
+                              <div class="invalid-feedback">
+                                El dado no es válido.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-2">
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-username">Cantidad</label>
+                              <input type="number" class=" form-control" id="username" required min="1" max="10"
+                                placeholder="cantidad" value="1">
+                              <div class="valid-feedback">
+                              </div>
+                              <div class="invalid-feedback">
+                                La cantidad no es correcta.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group col-lg-4 mx-auto my-auto ">
+                            <button class="btn btn-info w-100 mt-4" type="button">
+                              <span class="btn-inner--icon">Añadir<i class="bi bi-plus-lg mx-2"></i></span>
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn bg-gradient-primary">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
   {{>fixed_plugin}}
   <script src="./assets/js/plugins/sweetalert.min.js"></script>
   <script src="./assets/js/core/popper.min.js"></script>
