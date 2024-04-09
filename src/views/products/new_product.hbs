@@ -72,7 +72,7 @@
                                 <div class="d-flex justify-content-lg-between mb-4">
                                     <h5 class="font-weight-bolder">Agregar producto</h5>
                                     <button type="button" class="btn  btn-primary btn-sm mb-0" novalidate
-                                        onclick="enviar()"> +&nbsp; Terminar</button>
+                                        onclick="enviar()"> +&nbsp; Guardar</button>
                                     <script>
                                         const enviar = (() => {
                                             setTimeout(() => {
@@ -84,8 +84,8 @@
                                     </script>
                                 </div>
                                 <div class="row ">
-                                    <div class="col-12 col-sm-6  ">
-                                        <div class="form-group">
+                                    <div class="col-12 col-sm-6 ">
+                                        <div class="form-group ">
                                             <label class="form-control-label" for="input-username">Nombre de
                                                 producto</label>
                                             <input type="text" class="form-control" pattern="^[a-zA-Záéíóúñ ]+$"
@@ -99,8 +99,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 mt-3 mt-sm-0">
-                                        <label>Weight</label>
-                                        <input class="form-control" type="number" value="2" />
+                                        <label>Precio</label>
+                                        <input class="form-control" type="number" value="2000" />
                                     </div>
                                 </div>
 
@@ -109,7 +109,7 @@
                                         <div class="col-lg-3">
                                             <div class="form-group" pattern="[a-zA-Z]">
                                                 <label for=" exampleDataList"
-                                                    class="form-control-label">Adiciones</label>
+                                                    class="form-control-label">Insumos</label>
                                                 <input class="form-control " list="adicion" id="exampleDataList"
                                                     placeholder="Adición">
                                                 <datalist id="adicion">
@@ -223,7 +223,7 @@
                                         <div class="row">
                                             <h5 class="font-weight-bolder">Insumos</h5>
                                             <div class="col-12">
-                                                {{>pedidos_tabla}}
+                                                {{>productos_tabla }}
                                             </div>
 
                             </form>
