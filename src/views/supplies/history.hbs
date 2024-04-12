@@ -61,15 +61,8 @@
                     <h6 class="font-weight-bolder mb-0 text-white">Products List</h6>
                   </nav>
                 </div>
-                <div class="ms-auto my-auto mt-lg-0 mt-4 mb--3">
-                  <div class="ms-auto my-auto">
-                    <a href="new-product.html" class="btn bg-gradient-primary btn-sm mb-0" target="_blank">+&nbsp;
-                      Agregar insumo</a>
-                    <a class="btn bg-gradient-success btn-sm mb-0" target="_blank" data-bs-original-title="Edit product"
-                      data-bs-toggle="modal" data-bs-target="#agregar_insumo">+&nbsp;
-                      Agregar entrada</a>
-                    <a href="history" class="btn bg-gradient-warning btn-sm mb-0" target="_blank">+&nbsp; Historial
-                      entradas</a>
+                    <a href="supplies" class="btn bg-gradient-warning btn-sm mb-0" target="_blank">+&nbsp; volver a
+                      insumos</a>
                   </div>
                 </div>
               </div>
@@ -81,8 +74,7 @@
                     <tr>
                       <th>ID</th>
                       <th>Descripcion</th>
-                      <th>Precio</th>
-                      <th>Medidas</th>
+                      <th>Cantidad</th>
                       <th>Estado</th>
                       <th>Acciones</th>
                     </tr>
@@ -95,22 +87,10 @@
                         </div>
                       </td>
                       <td class="text-sm">Oreo</td>
-                      <td class="text-sm">$200</td>
                       <td class="text-sm">8 UND</td>
-                      <td>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
-                          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div>
-
-                      </td>
                       <td class="text-sm">
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
                           <i class="fas fa-eye text-secondary"></i>
-                        </a>
-                        <a href="javascript:;" class="mx-3" data-bs-original-title="Edit product" data-bs-toggle="modal"
-                          data-bs-target="#editar">
-                          <i class="fas fa-user-edit text-secondary"></i>
                         </a>
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product"
                           onclick="argon.showSwal('warning-message-and-confirmation')">
@@ -127,23 +107,13 @@
                       <td class="text-sm">Noel
                         
                       </td>
-                      <td class="text-sm">$400</td>
                       <td class="text-sm">20 UND</td>
-                      <td>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
-                          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div>
-
-                      </td>
+                      
                       <td class="text-sm">
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
                           <i class="fas fa-eye text-secondary"></i>
                         </a>
-                        <a href="javascript:;" class="mx-3" data-bs-original-title="Edit product" data-bs-toggle="modal"
-                          data-bs-target="#editar">
-                          <i class="fas fa-user-edit text-secondary"></i>
-                        </a>
+                        
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product"
                           onclick="argon.showSwal('warning-message-and-confirmation')">
                           <i class="fas fa-trash text-secondary"></i>
@@ -157,7 +127,7 @@
                         </div>
                       </td>
                       <td class="text-sm">Barquillo</td>
-                      <td class="text-sm">$700</td>
+                     
                       <td class="text-sm">12 UND</td>
                       <td>
                         <div class="form-check form-switch">
@@ -168,10 +138,6 @@
                       <td class="text-sm">
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
                           <i class="fas fa-eye text-secondary"></i>
-                        </a>
-                        <a href="javascript:;" class="mx-3" data-bs-original-title="Edit product" data-bs-toggle="modal"
-                          data-bs-target="#editar">
-                          <i class="fas fa-user-edit text-secondary"></i>
                         </a>
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product"
                           onclick="argon.showSwal('warning-message-and-confirmation')">
@@ -186,7 +152,6 @@
                         </div>
                       </td>
                       <td class="text-sm">Cereza</td>
-                      <td class="text-sm">$1000</td>
                       <td class="text-sm">25 UND</td>
                       <td>
                         <div class="form-check form-switch">
@@ -197,10 +162,6 @@
                       <td class="text-sm">
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
                           <i class="fas fa-eye text-secondary"></i>
-                        </a>
-                        <a href="javascript:;" class="mx-3" data-bs-original-title="Edit product" data-bs-toggle="modal"
-                          data-bs-target="#editar">
-                          <i class="fas fa-user-edit text-secondary"></i>
                         </a>
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product"
                           onclick="argon.showSwal('warning-message-and-confirmation')">
@@ -215,22 +176,14 @@
                         </div>
                       </td>
                       <td class="text-sm">Helado brownie</td>
-                      <td class="text-sm">$2000</td>
+                   
                       <td class="text-sm">40 LT</td>
-                      <td>
-                        <div class="form-check form-switch">
-                          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" >
-                          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
-                        </div>
-                      </td>
+                     
                       <td class="text-sm">
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Preview product">
                           <i class="fas fa-eye text-secondary"></i>
                         </a>
-                        <a href="javascript:;" class="mx-3" data-bs-original-title="Edit product" data-bs-toggle="modal"
-                          data-bs-target="#editar">
-                          <i class="fas fa-user-edit text-secondary"></i>
-                        </a>
+                        
                         <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete product"
                           onclick="argon.showSwal('warning-message-and-confirmation')">
                           <i class="fas fa-trash text-secondary"></i>
