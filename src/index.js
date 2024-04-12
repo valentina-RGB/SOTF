@@ -45,8 +45,10 @@ class server {
     
         // SUPPLIES
         this.app.get('/supplies',require ('./routers/supplies-routers'));
-        this.app.get('/tablas',require ('./routers/home-routers'));
+        this.app.get('/history',require ('./routers/supplies-routers'));
 
+         // SALES
+         this.app.get('/sales',require ('./routers/sales-routers'));
 
         //CONFIGURATION
         this.app.get('/user',require ('./routers/user-routers'));

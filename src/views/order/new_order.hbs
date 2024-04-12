@@ -413,23 +413,25 @@
                         <h5 class="font-weight-bolder">Forma de pago</h5>
                         <div class="col-5">
                           <label>Total a pagar</label>
-                          <input class="form-control" type="number" placeholder="$10.000" disabled/>
+                          <input class="form-control" type="number" placeholder="$10.000" disabled />
                         </div>
                         <div class="col-5">
-                         <form class=" was-validated">
-                           <label>Currency</label>
-                          <input class="form-control" type="number" placeholder="$ 0.000" required min="1000" value="1000" >
-                          <div class=" invalid-feedback">
-                            El dato no es válido
-                          </div>
-                         </form>
+                          <form class=" was-validated">
+                            <label>Currency</label>
+                            <input class="form-control" type="number" placeholder="$ 0.000" required min="1000"
+                              value="1000">
+                            <div class=" invalid-feedback">
+                              El dato no es válido
+                            </div>
+                          </form>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col">
                           <div class="form-group" pattern="[a-zA-Z]">
                             <label for=" exampleDataList" class="form-control-label">Método de pago</label>
-                            <input class="form-control " list="pago" id="exampleDataList" placeholder="pago" value="Efectivo">
+                            <input class="form-control " list="pago" id="exampleDataList" placeholder="pago"
+                              value="Efectivo">
                             <datalist id="pago">
                               <option value="Nequi">
                               <option value="Transferencia">
@@ -447,19 +449,19 @@
                     </div>
                   </div>
                 </div>
-                 <div class="modal-footer d-flex  justify-content-lg-center">
+                <div class="modal-footer d-flex  justify-content-lg-center">
                   <div>
-                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                onclick="check()">Cancelar</button>
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar cambios</button>
-              <script>
-                const check = (() => { document.getElementById('flexCheckDefault').checked = false; })
-              </script>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                      onclick="check()">Cancelar</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar cambios</button>
+                    <script>
+                      const check = (() => { document.getElementById('flexCheckDefault').checked = false; })
+                    </script>
                   </div>
-            </div>
+                </div>
               </div>
             </div>
-           
+
           </div>
         </div>
       </div>

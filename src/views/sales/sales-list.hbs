@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+  {{>link_css}}
+</head>
+
+<body class="g-sidenav-show   bg-gray-100">
+
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="min-height-300 bg-primary position-absolute w-100"></div>
+  <aside
+    class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+    id="sidenav-main">
+    {{>nav_home}}
+  </aside>
+  <main class="main-content position-relative border-radius-lg ">
+    <nav class="navbar navbar-main navbar-expand-lg  px-0 mx-2 shadow-none border-radius-xl z-index-sticky "
+      id="navbarBlur" data-scroll="false">
+      <div class="container-fluid py-1 px-3">
+
+        <div class="sidenav-toggler sidenav-toggler-inner d-xl-block d-none ">
+          <a href="javascript:;" class="nav-link p-0">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid py-4">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="card">
+
+            <div class="card-body px-0 pb-0">
+              <div class="col-12 mb-0">
+                <div class="card-header pb-0">
+                  <div class="d-lg-flex">
+                    <div>
+                      <h5 class="mb-0">Todos los pedidos</h5>
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+                          <li class="breadcrumb-item text-sm">
+                            <a class="text-primary" href="#">
+                              <i class="ni ni-box-2"></i>
+                            </a>
+                          </li>
+                          <li class="mx-2  text-sm  active"><a class="opacity-5 text-dark active" href="#">Pages</a>
+                          </li>
+                          <li class="mx-2 text-sm text-dark" aria-current="page">Products List</li>
+                        </ol>
+                        <h6 class="font-weight-bolder mb-0 text-white">Products List</h6>
+                      </nav>
+                    </div>
+                    <div class="ms-auto my-auto mt-lg-0 mt-4 mx-3">
+                      <div class="ms-auto my-auto mx-3">
+                        <a href="/newOrder" class="btn bg-gradient-primary btn-sm mb-0" target="_self">+&nbsp; Nuevo
+                          pedido</a>
+                        <button class="btn btn-outline-success btn-sm export mb-0 mt-sm-0 mt-1 export" data-type="csv"
+                          type="button">
+                          <span class="btn-inner--icon"><i class="ni ni-archive-2"></i></span>
+                          <span class="modal-title">Descargar</span>
+                        </button>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-flush" id="datatable-search">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Id venta</th>
+                      <th>Fecha</th>
+                      <th>Estado</th>
+                      <th>Cliente</th>
+                      <th>Metodo de pago</th>
+                      <th>Total a pagar</th>
+                      <th>Controles</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <p class="text-xs font-weight-bold ms-2 mb-0">#10421</p>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">
+                        <span class="my-2 text-xs">1 Nov, 10:20 AM</span>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <button
+                            class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                              class="fas fa-check" aria-hidden="true"></i></button>
+                          <span>Finalizado</span>
+                        </div>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Orlando Imieto</span>
+                        </div>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Transferencia</span>
+                        </div>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <span class="my-2 text-xs">$15.000</span>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="row d-flex">
+                          <div class="col-4 d-flex  justify-content-center align-items-center">
+                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#detalle"
+                              data-bs-original-title="Ver detalle">
+                              <i class="fas fa-eye text-secondary"></i>
+                            </a>
+                          </div>                         
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <p class="text-xs font-weight-bold ms-2 mb-0">#10422</p>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">
+                        <span class="my-2 text-xs">1 Nov, 10:53 AM</span>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <button
+                            class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                              class="fas fa-check" aria-hidden="true"></i></button>
+                          <span>Finalizado</span>
+                        </div>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Alice Murinho</span>
+                        </div>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Efectivo</span>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">
+                        <span class="my-2 text-xs">$ 2.500</span>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                        <div class="row d-flex">
+                          <div class="col-4 d-flex  justify-content-center align-items-center">
+                            <a href="javascript:;" data-bs-toggle="detalle" data-bs-original-title="Ver detalle">
+                              <i class="fas fa-eye text-secondary"></i>
+                            </a>
+                            
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <p class="text-xs font-weight-bold ms-2 mb-0">#10423</p>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">
+                        <span class="my-2 text-xs">1 Nov, 11:13 AM</span>
+                      </td>
+                      <td class="text-xs font-weight-bold">
+                  <div class="d-flex align-items-center">
+                    <button
+                      class="btn btn-icon-only btn-rounded btn-outline-danger mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                        class="fas fa-times" aria-hidden="true"></i></button>
+                    <span>Canceledo</span>
+                  </div>
+                </td>
+              <td class="text-xs font-weight-bold">
+                <div class="d-flex align-items-center">
+                  <span>Michael Mirra</span>
+                </div>
+              </td>
+              <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Efectivo</span>
+                        </div>
+                      </td>
+              <td class="text-xs font-weight-bold">
+                <span class="my-2 text-xs">
+                  $ 12.200
+                  {{!--<span class="text-secondary ms-2"> 20 min </span>--}}
+                </span>
+              </td>
+              <td class="text-xs font-weight-bold">
+                <div class="row d-flex">
+                  <div class="col-4 d-flex  justify-content-center align-items-center">
+                    <a href="javascript:;" data-bs-toggle="detalle" data-bs-original-title="Ver detalle">
+                      <i class="fas fa-eye text-secondary"></i>
+                    </a>
+                    
+                  </div>               
+                </div>
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+
+                    <p class="text-xs font-weight-bold ms-2 mb-0">#10424</p>
+                  </div>
+                </td>
+                <td class="font-weight-bold">
+                  <span class="my-2 text-xs">1 Nov, 12:20 PM</span>
+                </td>
+                <td class="text-xs font-weight-bold">
+                  <div class="d-flex align-items-center">
+                    <button
+                      class="btn btn-icon-only btn-rounded btn-outline-success mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                        class="fas fa-check" aria-hidden="true"></i></button>
+                    <span>Paid</span>
+                  </div>
+                </td>
+                <td class="text-xs font-weight-bold">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                      <span>Andrew Nichel</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Transferencia</span>
+                        </div>
+                      </td>
+                <td class="text-xs font-weight-bold">
+                  <span class="my-2 text-xs">
+                    $3.000
+                  </span>
+                </td>
+                <td class="text-xs font-weight-bold">
+                  <div class="row d-flex">
+                    <div class="col-4 d-flex  justify-content-center align-items-center">
+                      <a href="javascript:;" data-bs-toggle="detalle" data-bs-original-title="Ver detalle">
+                        <i class="fas fa-eye text-secondary"></i>
+                      </a>
+                      
+                    </div>                   
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+
+                    <p class="text-xs font-weight-bold ms-2 mb-0">#10425</p>
+                  </div>
+                </td>
+                <td class="font-weight-bold">
+                  <span class="my-2 text-xs">1 Nov, 1:40 PM</span>
+                </td>
+                <td class="text-xs font-weight-bold">
+                  <div class="d-flex align-items-center">
+                    <button
+                      class="btn btn-icon-only btn-rounded btn-outline-danger mb-0 me-2 btn-sm d-flex align-items-center justify-content-center"><i
+                        class="fas fa-times" aria-hidden="true"></i></button>
+                    <span>Canceledo</span>
+                  </div>
+                </td>
+                <td class="text-xs font-weight-bold">
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                      <span>Sebastian Koga</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="text-xs font-weight-bold">
+                        <div class="d-flex align-items-center">
+                          <span>Efectivo</span>
+                        </div>
+                      </td>
+                <td class="text-xs font-weight-bold">
+                  <span class="my-2 text-xs">
+                    $0.0
+                  </span>
+                </td>
+                <td class="text-xs font-weight-bold">
+                  <div class="row d-flex">
+                    <div class="col-4 d-flex  justify-content-center align-items-center">
+                      <a href="javascript:;" data-bs-toggle="detalle" data-bs-original-title="Ver detalle">
+                        <i class="fas fa-eye text-secondary"></i>
+                      </a>
+                     
+                    </div>                    
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+
+  {{!-- MODAL VER DETALLE --}}
+  <div class="modal fade bg-danger mx-auto" id="detalle" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        </div>
+        <div class="modal-body  ">
+          <div class="col-12">
+            {{>order_details}}
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  {{!-- MODAL EDITAR --}}
+
+  <div class="modal fade  " id="detalle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg bg-black ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12">
+            {{>order_details}}
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  {{>fixed_plugin}}
+
+  {{>link_js}}
+  {{!-- links propios --}}
+  <script src="./assets/js/plugins/datatables.js"></script>
+
+  <script>
+    const dataTableSearch = new simpleDatatables.DataTable("#datatable-search", {
+      searchable: true,
+      fixedHeight: false,
+      perPageSelect: false
+    });
+
+    document.querySelectorAll(".export").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        var type = el.dataset.type;
+
+        var data = {
+          type: type,
+          filename: "soft-ui-" + type,
+        };
+
+        if (type === "csv") {
+          data.columnDelimiter = "|";
+        }
+
+        dataTableSearch.export(data);
+      });
+    });
+  </script>
+</body>
+
+</html>
